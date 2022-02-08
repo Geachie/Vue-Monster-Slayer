@@ -1,6 +1,5 @@
-const getRandomVal = (min, max) => {
-  return Math.floor(Math.random() * (max - min)) + min;
-};
+const getRandomVal = (min, max) =>
+  Math.floor(Math.random() * (max - min)) + min;
 
 const app = Vue.createApp({
   data() {
