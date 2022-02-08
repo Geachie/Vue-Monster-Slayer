@@ -13,6 +13,7 @@ const app = Vue.createApp({
     attackMonster() {
       const attackVal = getRandomVal(5, 12);
       this.monsterHealth -= attackVal;
+      this.attackPlayer();
     },
     attackPlayer() {
       const attackVal = getRandomVal(8, 15);
