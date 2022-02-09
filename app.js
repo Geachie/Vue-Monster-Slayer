@@ -1,10 +1,6 @@
-// const getRandomVal = (min, max) => {
-//   return Math.floor(Math.random() * (max - min)) + min;
-// };
-
-function getRandomVal(min, max) {
+const getRandomVal = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
-}
+};
 
 let currentRound = 0;
 
