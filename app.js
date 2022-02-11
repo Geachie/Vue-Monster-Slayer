@@ -84,6 +84,8 @@ const app = Vue.createApp({
       this.playerHealth + healValue > 100
         ? (this.playerHealth = 100)
         : (this.playerHealth += healValue);
+      //  CHECK FOR BUG!!!
+      this.addLogMessage("player", "attack", healValue);
       this.attackPlayer();
     },
     surrender() {
